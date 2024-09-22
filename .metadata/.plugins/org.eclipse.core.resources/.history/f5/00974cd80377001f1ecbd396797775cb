@@ -1,0 +1,14 @@
+package collectionframework;
+
+import java.util.ArrayList;
+
+public class List2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		List<Integer> numbers=new ArrayList()<Integer>();
+	}
+
+}

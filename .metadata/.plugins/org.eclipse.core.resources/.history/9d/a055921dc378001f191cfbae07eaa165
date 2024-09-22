@@ -1,0 +1,61 @@
+package com.Security.demoJWt.Security;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.web.SecurityFilterChain;
+
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+	
+	
+	//spring3 does not work with the antMatchers but with the requestMatchers.
+	//latest update.
+	/*
+	 * 
+	 * requestMatchers(HttpMethod.GET).permitAll();
+	 * 
+	 * 
+	 */
+	
+	@Bean
+	public SecurityFilterChain MysecurityFilter(HttpSecurity http) throws Exception
+	{
+	
+		http.
+		    csrf().disable()
+		    .authorizeRequests()
+		    .requestMatchers(HttpMethod.GET).hasRole("ADMIN")
+		    .anyRequest().authenticated()
+		    .and()
+		    .httpBasic();
+		
+		return http.build();
+	}
+	
+	
+	@Bean
+	public UserDetails users()
+	{
+		
+	 UserDetails admin=User.builder().username("Admin")
+			 .password("password")
+			 .roles("ADMIN")
+			 .build();
+	 
+	 
+	 UserDetails user=User.builder()
+			 .username("Userr")
+			 .password("Userr")
+			 .roles("USER")
+			 .build();
+			 
+			 
+	}
+
+}

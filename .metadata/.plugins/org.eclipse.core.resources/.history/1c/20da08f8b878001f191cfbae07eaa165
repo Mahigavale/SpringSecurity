@@ -1,0 +1,22 @@
+package com.Security.demoJWt.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.Security.demoJWt.Repository.StudentRepo;
+
+@Service
+public class StudentService {
+	
+	@Autowired
+	private StudentRepo repo;
+	
+	public String addstudentser(Student student)
+	{
+		repo.save(student);
+		return "Done !";
+	}
+	
+	
+
+}

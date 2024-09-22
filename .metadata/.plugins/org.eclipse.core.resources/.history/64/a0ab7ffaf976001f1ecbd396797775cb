@@ -1,0 +1,14 @@
+package collectionframework;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Map1 {
+
+	public static void main(String[] args) {
+
+		
+		Map<String,String> pincode=new HashMap<String,String>();
+	}
+
+}

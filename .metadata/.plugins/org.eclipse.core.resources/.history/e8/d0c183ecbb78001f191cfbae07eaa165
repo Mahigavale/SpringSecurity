@@ -1,0 +1,5 @@
+package com.Security.demoJWt.Security;
+
+public class SecurityConfig {
+
+}
