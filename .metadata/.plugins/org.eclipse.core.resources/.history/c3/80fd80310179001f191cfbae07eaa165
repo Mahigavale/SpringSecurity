@@ -1,0 +1,40 @@
+package com.example.Security;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.web.SecurityFilterChain;
+
+@EnableWebSecurity
+@Configuration
+public class SecurityConfig {
+	
+	
+	@Bean
+	public SecurityFilterChain mysecurity(HttpSecurity http) throws Exception
+	{
+		http
+		 .csrf().disable()
+		 .authorizeRequests()
+		 .requestMatchers(HttpMethod.POST).permitAll()
+		 .requestMatchers(HttpMethod.GET).permitAll()
+		 .requestMatchers(HttpMethod.PUT).permitAll()
+		 .requestMatchers(HttpMethod.DELETE).permitAll()
+		 .anyRequest().authenticated()
+		 .and()
+		 .httpBasic();
+		
+		return http.build();
+		 
+	}
+	
+	@Bean
+	public UserDetailsService users()
+	{
+		
+	}
+
+}
