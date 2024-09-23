@@ -617,3 +617,13 @@
 2024-09-22 22:12:02,131 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-09-22 22:12:02,139 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-09-22 22:12:02,142 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\lenovo\Downloads\Springsecurity2\Springsecurity2\src\test\resources
+2024-09-22 22:22:48,312 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-22 22:22:48,326 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-22 22:22:48,330 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\lenovo\Downloads\Springsecurity2\Springsecurity2\src\test\resources
+2024-09-23 08:23:11,412 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped oejs.Server@7dee4a15{STOPPING}[12.0.9,sto=0]
+2024-09-23 08:23:11,427 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@e67240b{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2024-09-23 18:25:28,769 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-09-23 18:25:42,438 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2024-09-23 18:26:47,515 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-09-23 18:26:47,533 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-09-23 18:26:47,539 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\lenovo\Downloads\Springsecurity2\Springsecurity2\src\test\resources
