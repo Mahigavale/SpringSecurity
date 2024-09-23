@@ -1,0 +1,19 @@
+package com.Security.Entity;
+
+import jakarta.persistence.Entity;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Data
+@Getter
+@Setter
+public class Cricketer {
+
+	private int cricketerid;
+	private String cricktername;
+	private String cricketerteam;
+	private String creciketernumber;
+	
+}

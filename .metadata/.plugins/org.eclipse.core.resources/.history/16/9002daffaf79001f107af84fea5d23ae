@@ -1,0 +1,15 @@
+package com.Security.Entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Cricketerfamily {
+	
+	private int familyid;
+	
+	private int familymemebers;
+	private String city;
+	private boolean ismarried;
+	
+
+}

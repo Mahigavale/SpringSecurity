@@ -1,0 +1,5 @@
+package com.Security.Repos;
+
+public interface Cricketerfamilyrepo {
+
+}

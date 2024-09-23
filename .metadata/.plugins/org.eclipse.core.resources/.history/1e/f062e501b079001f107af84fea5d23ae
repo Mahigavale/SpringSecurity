@@ -1,0 +1,22 @@
+package com.Security.Entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Cricketerfamily {
+	
+	
+	@Id
+	@GeneratedValue(Strategy=GenerationType.IDENTITY)
+	private int familyid;
+	
+	private int familymemebers;
+	private String city;
+	private boolean ismarried;
+	
+	
+	
+
+}
