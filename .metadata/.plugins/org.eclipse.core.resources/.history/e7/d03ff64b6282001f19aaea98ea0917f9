@@ -1,0 +1,14 @@
+package com.springsecurity.security4.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class User {
+	
+	private String username;
+	private String useremail;
+	private String usermobile;
+	private String userlocation;
+	private String userOrder;
+
+}

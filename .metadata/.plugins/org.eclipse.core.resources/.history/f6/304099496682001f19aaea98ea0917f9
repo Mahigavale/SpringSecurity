@@ -1,0 +1,28 @@
+package com.springsecurity.security4.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.springsecurity.security4.Repository.Userrepo;
+import com.springsecurity.security4.entity.User;
+
+@Service
+public class UserService {
+	
+	@Autowired 
+	private Userrepo repo;
+	
+	public String adduser(User user)
+	{
+		repo.save(user);
+		
+		return "Done !";
+	}
+	
+	
+	
+	
+	
+	
+
+}

@@ -1,0 +1,29 @@
+package com.springsecurity.security4.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
+
+@Entity
+public class User {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int userid;
+	private String username;
+	private String useremail;
+	private String usermobile;
+	
+	
+	@JoinColumn
+	@OneToOne
+	private Location userlocation;
+	
+	@JoinColumn
+	@OneToOne
+	private Order userOrder;
+
+}

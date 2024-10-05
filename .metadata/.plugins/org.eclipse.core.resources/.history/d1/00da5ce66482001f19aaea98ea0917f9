@@ -1,0 +1,17 @@
+package com.springsecurity.security4.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Order {
+	
+	@Id
+	private int orderid;
+	private int quantity;
+	private double price;
+	private String plantname;
+	private double totalprice;
+	
+
+}

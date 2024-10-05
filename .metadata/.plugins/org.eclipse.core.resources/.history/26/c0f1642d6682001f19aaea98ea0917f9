@@ -1,0 +1,12 @@
+package com.springsecurity.security4.Dto;
+
+public class UserDto {
+	
+	private String username;
+	private String useremail;
+	private String city;
+	private String state;
+	private double totalprice;
+	private String pincode;
+
+}

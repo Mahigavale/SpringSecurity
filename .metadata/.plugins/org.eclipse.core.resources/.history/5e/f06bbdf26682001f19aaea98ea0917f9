@@ -1,0 +1,40 @@
+package com.springsecurity.security4.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.springsecurity.security4.Dto.UserDto;
+import com.springsecurity.security4.Repository.Userrepo;
+import com.springsecurity.security4.entity.User;
+
+@Service
+public class UserService {
+	
+	@Autowired 
+	private Userrepo repo;
+	
+	public String adduser(User user)
+	{
+		repo.save(user);
+		
+		return "Done !";
+	}
+	
+	
+	
+	public User findbymobile(String mobile)
+	{
+		return repo.findbymobile(mobile);
+	}
+	
+	
+	
+	public UserDto userdto(String mobile)
+	{
+		User us=repo.findbymobile(mobile);
+		
+		UserDto dt=new UserDto();
+	}
+	
+
+}
