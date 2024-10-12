@@ -2,7 +2,7 @@ INDEX VERSION 1.134+C:\SpringSecurity\.metadata\.plugins\org.eclipse.jdt.core
 2223788140.index
 4190559446.index
 3103495110.index
-2149083990.index
+1030215036.index
 3979958391.index
 149505797.index
 1911297966.index
@@ -14,22 +14,18 @@ INDEX VERSION 1.134+C:\SpringSecurity\.metadata\.plugins\org.eclipse.jdt.core
 3414025766.index
 3353434028.index
 95387131.index
-4228699782.index
 3096178950.index
 3321936105.index
 188749568.index
-3296703228.index
 2842593243.index
 1865797976.index
 2148676080.index
 2431329095.index
-11850298.index
 1346276075.index
 879755520.index
 4211081474.index
 2635329014.index
 4220709411.index
-2540320192.index
 2293489435.index
 2742506088.index
 2758706374.index
@@ -39,7 +35,6 @@ INDEX VERSION 1.134+C:\SpringSecurity\.metadata\.plugins\org.eclipse.jdt.core
 4211278829.index
 2794552366.index
 1453017167.index
-3639471358.index
 424118529.index
 93833382.index
 2784488008.index
@@ -49,6 +44,5 @@ INDEX VERSION 1.134+C:\SpringSecurity\.metadata\.plugins\org.eclipse.jdt.core
 1181282302.index
 1596161812.index
 2852933785.index
-1584645662.index
 151718808.index
 3263003994.index

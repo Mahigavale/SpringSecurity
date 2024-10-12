@@ -1,0 +1,7 @@
+package com.security.entity;
+
+
+@Entity
+public class Users {
+
+}
