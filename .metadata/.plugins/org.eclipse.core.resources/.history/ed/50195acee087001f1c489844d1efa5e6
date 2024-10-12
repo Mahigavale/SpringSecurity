@@ -1,0 +1,25 @@
+package com.springsecurity.security4.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.actuate.info.Info.Builder;
+import org.springframework.boot.actuate.info.InfoContributor;
+import org.springframework.stereotype.Component;
+
+import com.springsecurity.security4.Repository.Userrepo;
+
+@Component
+public class InfoService implements InfoContributor {
+
+	@Autowired
+	private Userrepo repo;
+	@Override
+	public void contribute(Builder builder) {
+
+		
+		List<UserDto> users_nursery=repo.findAll()''
+		
+		
+	}
+
+	
+}

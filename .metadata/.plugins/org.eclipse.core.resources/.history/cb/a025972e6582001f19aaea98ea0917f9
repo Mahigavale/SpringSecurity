@@ -1,7 +1,0 @@
-package com.springsecurity.security4.Repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface Userrepo extends JpaRepository<T, ID> {
-
-}

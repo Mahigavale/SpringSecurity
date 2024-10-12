@@ -1,7 +1,0 @@
-package collectionframework;
-
-public class Employee {
-
-	String name;
-	String city;
-}

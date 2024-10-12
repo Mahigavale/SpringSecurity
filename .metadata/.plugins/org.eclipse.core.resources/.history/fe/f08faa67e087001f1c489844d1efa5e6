@@ -1,0 +1,10 @@
+package com.springsecurity.security4.Service;
+
+import org.springframework.boot.actuate.info.InfoContributor;
+import org.springframework.stereotype.Component;
+
+@Component
+public class InfoService implements InfoContributor {
+
+	
+}

@@ -1,0 +1,12 @@
+package com.springsecurity.security4.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class OrderService {
+
+	
+	@Autowired
+	private Orderrepo repo;
+}

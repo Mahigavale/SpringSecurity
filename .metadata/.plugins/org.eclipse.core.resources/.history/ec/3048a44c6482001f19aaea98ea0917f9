@@ -1,8 +1,0 @@
-package com.springsecurity.security4.entity;
-
-import jakarta.persistence.Entity;
-
-@Entity
-public class Location {
-
-}
