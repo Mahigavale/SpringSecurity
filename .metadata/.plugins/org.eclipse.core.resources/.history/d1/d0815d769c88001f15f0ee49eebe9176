@@ -1,0 +1,13 @@
+package com.security.SpringSecurity6.Entity;
+import jakarta.persistence.Entity;
+
+
+
+@Entity
+public class Users {
+	
+	private int id;
+	private String username;
+	private String password;
+
+}

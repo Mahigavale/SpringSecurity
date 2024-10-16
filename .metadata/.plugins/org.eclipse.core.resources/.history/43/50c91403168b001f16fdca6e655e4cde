@@ -1,0 +1,5 @@
+package com.springsecurity.security4.Principal;
+
+public class UserPrincipal {
+
+}
