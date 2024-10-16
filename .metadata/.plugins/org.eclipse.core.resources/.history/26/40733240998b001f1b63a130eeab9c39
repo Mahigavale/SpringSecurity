@@ -1,0 +1,5 @@
+package com.security.Case.Principal;
+
+public class UserPrincipal {
+
+}

@@ -1,0 +1,30 @@
+package com.security.Case.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.security.Case.Entity.UserEntity;
+import com.security.Case.Repository.Userrepo;
+
+@RestController
+public class Usercontroller {
+	
+	
+	@Autowired
+	private Userrepo repo;
+	
+	@PostMapping("/add-user")
+	public String adduser(@RequestBody UserEntity Users)
+	{
+		
+		repo.save(Users);
+		
+		return "User added sucessfully !";
+	}
+	
+	
+	
+
+}

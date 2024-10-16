@@ -1,0 +1,39 @@
+package com.security.Case.Principal;
+
+import java.util.Collection;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import com.security.Case.Entity.UserEntity;
+
+public class UserPrincipal implements UserDetails {
+
+	
+	@Autowired
+	private UserEntity user;
+	
+	public UserPrincipal(UserEntity user) {
+		this.user=user;
+	}
+
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getPassword() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getUsername() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

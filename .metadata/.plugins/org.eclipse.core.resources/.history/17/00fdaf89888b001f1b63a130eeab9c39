@@ -1,0 +1,5 @@
+package com.security.Case.Repository;
+
+public interface Userrepo {
+
+}

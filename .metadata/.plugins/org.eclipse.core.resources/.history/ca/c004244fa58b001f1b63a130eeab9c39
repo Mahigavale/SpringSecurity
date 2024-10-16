@@ -1,0 +1,29 @@
+package com.security.Case.Service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.security.Case.Entity.UserEntity;
+import com.security.Case.Repository.Userrepo;
+
+@Service
+public class UserEntityService {
+
+	@Autowired
+	private Userrepo repo;
+	
+	public String adduserser(UserEntity user)
+	{
+		repo.save(user);
+		
+		return "User added sucessfully !";
+		
+	}
+	
+	public List<UserEntity> getallusersser()
+	{
+		return repo.findAll();
+	}
+}

@@ -1,0 +1,27 @@
+package com.security.Case.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+import com.security.Case.Entity.UserEntity;
+import com.security.Case.Repository.Userrepo;
+
+@Service
+public class myuserservice implements UserDetailsService {
+
+	@Autowired
+	private Userrepo repo;
+	
+	
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		UserEntity User=repo.getbyusername(username);
+		
+		
+		return new UserPrincipal(User);
+	}
+
+}
