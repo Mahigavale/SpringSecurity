@@ -1,0 +1,13 @@
+package com.security.Auth.Security;
+
+import com.security.Auth.Entity.Dairyadmin;
+
+public class Adminprincipal {
+	
+	
+	public Adminprincipal(Dairyadmin admin)
+	{
+		
+	}
+
+}

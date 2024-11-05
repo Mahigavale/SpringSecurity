@@ -1,9 +1,0 @@
-package com.security.SpringSecurity6.Entity;
-import jakarta.persistence.Entity;
-
-
-
-@Entity
-public class Users {
-
-}

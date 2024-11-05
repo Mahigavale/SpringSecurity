@@ -1,0 +1,11 @@
+package com.security.Auth.Security;
+
+public class Adminprincipal {
+	
+	
+	public Adminprincipal(Dairyadmin admin)
+	{
+		
+	}
+
+}

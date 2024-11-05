@@ -1,0 +1,37 @@
+package com.school.Controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.school.Entity.Teacher;
+import com.school.Service.Parentservice;
+import com.school.Service.Studentservice;
+import com.school.Service.Teacherservice;
+@RequestMapping("/Admin")
+@RestController
+public class Admincontroller {
+	
+	
+	@Autowired
+	private Studentservice service1;
+	
+	@Autowired
+	private Teacherservice service2;
+	
+	@Autowired
+	private Parentservice service3;
+	
+	@GetMapping("/get-all-teachers")
+	public List<Teacher> getalltc()
+	{
+		return service2.getall();
+	}
+	
+	
+	
+
+}

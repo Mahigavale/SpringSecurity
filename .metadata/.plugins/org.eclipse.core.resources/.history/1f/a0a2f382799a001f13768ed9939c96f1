@@ -1,0 +1,23 @@
+package com.school.Entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class School {
+	
+	@Id
+	@GeneratedValue(strategy = =GenerationType.IDENTITY)
+	private int schoolid;
+	private String registration;
+	private String schoolname;
+	private String schooladdress;
+	private String schoolprincipal;
+	private int studentstrength;
+	private int teacherstrength;
+	private int supportstaff;
+	
+
+}

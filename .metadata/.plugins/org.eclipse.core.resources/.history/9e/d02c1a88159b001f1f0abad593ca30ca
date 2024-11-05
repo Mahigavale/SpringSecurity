@@ -1,0 +1,21 @@
+package com.security.Auth.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.security.Auth.Entity.Dairyadmin;
+import com.security.Auth.Repository.Adminrepo;
+
+@Service
+public class Adminservice {
+
+	
+	@Autowired
+	private Adminrepo repo;
+	
+	
+	public String saveadmin(Dairyadmin admin)
+	{
+		
+	}
+}

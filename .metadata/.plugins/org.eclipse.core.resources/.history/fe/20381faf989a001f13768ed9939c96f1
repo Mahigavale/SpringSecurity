@@ -1,0 +1,54 @@
+package com.school.Entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Principaladdress {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int id;
+	private String lane;
+	private String pincode;
+	private String locality;
+	private String housename;
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getLane() {
+		return lane;
+	}
+	public void setLane(String lane) {
+		this.lane = lane;
+	}
+	public String getPincode() {
+		return pincode;
+	}
+	public void setPincode(String pincode) {
+		this.pincode = pincode;
+	}
+	public String getLocality() {
+		return locality;
+	}
+	public void setLocality(String locality) {
+		this.locality = locality;
+	}
+	public String getHousename() {
+		return housename;
+	}
+	public void setHousename(String housename) {
+		this.housename = housename;
+	}
+	
+	
+	
+	
+	
+
+}

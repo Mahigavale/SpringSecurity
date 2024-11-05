@@ -1,0 +1,11 @@
+package com.school.Service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class Studentservice {
+
+	
+	@Autowired
+	private Studentrepo repol
+}

@@ -1,9 +1,0 @@
-package com.springsecurity.security4.Dto;
-
-public class OrderDto {
-
-	
-	
-	private int orderid;
-	private String username;
-}

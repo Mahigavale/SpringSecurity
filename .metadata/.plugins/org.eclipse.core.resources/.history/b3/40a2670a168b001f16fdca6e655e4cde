@@ -1,7 +1,0 @@
-package com.springsecurity.security4.Principal;
-
-import org.springframework.security.core.userdetails.UserDetails;
-
-public class UserPrincipal implements UserDetails{
-
-}

@@ -1,0 +1,16 @@
+package com.school.Entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Teacher {
+	
+	
+	private int id;
+	private String name;
+	
+	@Email()
+	private String email;
+	
+
+}

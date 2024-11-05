@@ -1,0 +1,16 @@
+package com.security.Auth.Entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Dairyadmin {
+	
+	
+	@Id
+	private String email;
+	private String name;
+	private String contact;
+
+
+}

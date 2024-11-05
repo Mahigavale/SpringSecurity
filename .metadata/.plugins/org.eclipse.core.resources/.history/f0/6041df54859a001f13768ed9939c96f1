@@ -1,0 +1,15 @@
+package com.school.Entity;
+
+import jakarta.persistence.Id;
+
+public class Parentaddress {
+	
+	
+	@Id
+	private int id;
+	private String locality;
+	private String city;
+	private String pinocode;
+	private String state;
+
+}

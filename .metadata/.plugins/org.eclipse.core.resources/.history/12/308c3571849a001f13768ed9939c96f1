@@ -1,0 +1,13 @@
+package com.school.Entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Principal {
+	
+	private String contact;
+	private String name;
+	private String qualification;
+	
+
+}

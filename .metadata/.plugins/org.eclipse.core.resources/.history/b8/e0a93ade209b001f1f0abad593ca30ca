@@ -1,0 +1,14 @@
+package com.security.Auth.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.security.Auth.Entity.Dairyadmin;
+@Repository
+public interface Adminrepo extends JpaRepository<Dairyadmin, String> {
+	
+	
+	@Query()
+	public Dairyadmin findbyemail();
+
+}

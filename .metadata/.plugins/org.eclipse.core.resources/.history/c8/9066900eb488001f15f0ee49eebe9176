@@ -1,5 +1,0 @@
-package com.security.SpringSecurity6.Controller;
-
-public class UserController {
-
-}

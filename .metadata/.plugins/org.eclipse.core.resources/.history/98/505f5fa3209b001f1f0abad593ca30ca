@@ -1,0 +1,7 @@
+package com.security.Auth.Security;
+
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+public class Myuserservice implements UserDetailsService {
+
+}

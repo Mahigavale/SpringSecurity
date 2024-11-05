@@ -1,9 +1,0 @@
-package com.springsecurity.security4.Dto;
-
-public class UserDto2 {
-	
-	
-	private String username;
-	private String usermobile;
-
-}

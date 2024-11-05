@@ -1,0 +1,15 @@
+package com.example.Littleangel.Controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class SchoolController {
+	
+	
+	
+	public String addschool()
+	{
+		return "post method !";
+	}
+
+}

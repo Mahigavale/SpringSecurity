@@ -1,0 +1,5 @@
+package com.security.Auth.Entity;
+
+public class Dairycustomer {
+
+}

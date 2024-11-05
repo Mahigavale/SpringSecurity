@@ -1,0 +1,9 @@
+package com.security.Auth.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.security.Auth.Entity.Dairyadmin;
+
+public interface Adminrepo extends JpaRepository<Dairyadmin, String> {
+
+}

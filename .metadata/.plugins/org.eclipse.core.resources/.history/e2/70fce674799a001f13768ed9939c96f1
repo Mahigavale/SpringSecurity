@@ -1,0 +1,17 @@
+package com.school.Entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class School {
+	
+	private String registration;
+	private String schoolname;
+	private String schooladdress;
+	private String schoolprincipal;
+	private int studentstrength;
+	private int teacherstrength;
+	private int supportstaff;
+	
+
+}

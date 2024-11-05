@@ -1,0 +1,9 @@
+package com.school.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.school.Entity.School;
+
+public interface Schoolrepo extends JpaRepository<School, Integer> {
+
+}

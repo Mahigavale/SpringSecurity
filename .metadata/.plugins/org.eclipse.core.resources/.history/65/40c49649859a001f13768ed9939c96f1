@@ -1,0 +1,11 @@
+package com.school.Entity;
+
+public class Parentaddress {
+	
+	private int id;
+	private String locality;
+	private String city;
+	private String pinocode;
+	private String state;
+
+}

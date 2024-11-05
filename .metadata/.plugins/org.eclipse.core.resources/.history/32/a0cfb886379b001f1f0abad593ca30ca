@@ -1,0 +1,14 @@
+package com.security.Auth.Entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+
+@Entity
+public class Dairycustomer {
+	
+	@Column(not null)
+	private String name;
+	private String contact;
+	
+
+}

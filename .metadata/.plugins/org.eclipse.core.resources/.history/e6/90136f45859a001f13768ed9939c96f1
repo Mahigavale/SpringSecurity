@@ -1,0 +1,8 @@
+package com.school.Entity;
+
+public class Parentaddress {
+	
+	private int id;
+	
+
+}

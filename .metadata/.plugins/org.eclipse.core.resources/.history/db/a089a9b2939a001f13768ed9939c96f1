@@ -1,0 +1,15 @@
+package com.school.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.school.Service.Principalservice;
+
+@RestController
+public class Principalcontroller {
+	
+	
+	@Autowired
+	private Principalservice service;
+
+}

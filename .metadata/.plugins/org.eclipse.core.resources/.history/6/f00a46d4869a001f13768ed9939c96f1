@@ -1,0 +1,73 @@
+package com.school.Entity;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+
+@Entity
+public class School {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int schoolid;
+	private String registration;
+	private String schoolname;
+	private String schoolprincipal;
+	private int studentstrength;
+	private int teacherstrength;
+	private int supportstaff;
+	
+	@JoinColumn(cascade=CascadeType.ALL)
+	private Schooladdress address;
+	
+	
+	public int getSchoolid() {
+		return schoolid;
+	}
+	public void setSchoolid(int schoolid) {
+		this.schoolid = schoolid;
+	}
+	public String getRegistration() {
+		return registration;
+	}
+	public void setRegistration(String registration) {
+		this.registration = registration;
+	}
+	public String getSchoolname() {
+		return schoolname;
+	}
+	public void setSchoolname(String schoolname) {
+		this.schoolname = schoolname;
+	}
+		public String getSchoolprincipal() {
+		return schoolprincipal;
+	}
+	public void setSchoolprincipal(String schoolprincipal) {
+		this.schoolprincipal = schoolprincipal;
+	}
+	public int getStudentstrength() {
+		return studentstrength;
+	}
+	public void setStudentstrength(int studentstrength) {
+		this.studentstrength = studentstrength;
+	}
+	public int getTeacherstrength() {
+		return teacherstrength;
+	}
+	public void setTeacherstrength(int teacherstrength) {
+		this.teacherstrength = teacherstrength;
+	}
+	public int getSupportstaff() {
+		return supportstaff;
+	}
+	public void setSupportstaff(int supportstaff) {
+		this.supportstaff = supportstaff;
+	}
+	
+	
+	
+
+}

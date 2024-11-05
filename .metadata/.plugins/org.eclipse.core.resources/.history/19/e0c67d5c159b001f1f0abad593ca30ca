@@ -1,0 +1,7 @@
+package com.security.Auth.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface Adminrepo extends JpaRepository<T, ID> {
+
+}

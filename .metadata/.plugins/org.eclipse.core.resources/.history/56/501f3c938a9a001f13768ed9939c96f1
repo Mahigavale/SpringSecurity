@@ -1,0 +1,12 @@
+package com.school.Entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Teacher {
+	
+	
+	private int id;
+	
+
+}

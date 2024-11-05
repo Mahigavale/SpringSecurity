@@ -1,0 +1,25 @@
+package com.school.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.school.Entity.Principal;
+import com.school.Service.Principalservice;
+
+@RestController
+@RequestMapping("/Principal")
+public class Principalcontroller {
+	
+	
+	@Autowired
+	private Principalservice service;
+	
+	@PostMapping("/add-principal")
+	public String addprincipalc(@RequestBody Principal principal)
+	{
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.school.Entity;
+
+import jakarta.persistence.Entity;
+import jakarta.validation.constraints.Email;
+
+@Entity
+public class Teacher {
+	
+	
+	private int id;
+	private String name;
+	
+	@Email(regexp = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$", message = "Invalid email format")
+	private String email;
+	
+
+}

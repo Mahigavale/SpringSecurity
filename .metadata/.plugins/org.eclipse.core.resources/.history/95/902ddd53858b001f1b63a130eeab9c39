@@ -1,8 +1,0 @@
-package com.security.Case.Entity;
-
-import jakarta.persistence.Entity;
-
-@Entity
-public class UserEntity {
-
-}
