@@ -1,0 +1,26 @@
+package com.security.Auth.Service;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.security.Auth.Repository.Dairycustomerrepo;
+
+@SpringBootTest
+public class Dairycustomerservicetest {
+	
+	@Autowired
+	private Dairycustomerrepo repo;
+	
+	
+	@Test
+	public void testemail()
+	{
+		assertEquals(4,2+2);
+		assertNotNull(repo.findbyemail("Abc@gamil.com"));
+	}
+
+}

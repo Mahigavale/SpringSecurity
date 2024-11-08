@@ -1,0 +1,11 @@
+package com.products.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.products.Entity.Bottles;
+
+@Repository
+public interface Bottlerepo extends JpaRepository<Bottles, Integer> {
+
+}

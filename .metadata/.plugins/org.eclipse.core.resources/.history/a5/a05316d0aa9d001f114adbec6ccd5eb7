@@ -1,0 +1,25 @@
+package com.products.Service;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.products.Repository.Bottlerepo;
+
+@ExtendWith(MockitoExtension.class)
+public class BottleServiceTest {
+	
+	@Mock
+	private Bottlerepo repo;
+	
+	@InjectMocks
+	private Bottlesservice sevice;
+	
+	
+	@Test
+	
+	
+
+}

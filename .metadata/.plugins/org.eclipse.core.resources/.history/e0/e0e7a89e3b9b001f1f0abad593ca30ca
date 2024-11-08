@@ -1,0 +1,14 @@
+package com.security.Auth.Service;
+
+import org.junit.jupiter.api.Test;
+
+public class Dairycustomerservicetest {
+	
+	
+	@Test
+	public void testemail()
+	{
+		
+	}
+
+}

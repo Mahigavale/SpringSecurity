@@ -1,0 +1,13 @@
+package com.security.Auth.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.security.Auth.Entity.Dairycustomer;
+
+public interface Dairycustomerrepo extends JpaRepository<Dairycustomerrepo,String> {
+
+	@Query(value="select * from dairycustomer where email= :em",nativeQuery=true)
+	public Dairycustomer findbyemail(@Param("em") String em);
+	
+}

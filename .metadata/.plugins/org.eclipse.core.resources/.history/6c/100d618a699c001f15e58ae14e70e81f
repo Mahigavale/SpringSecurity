@@ -1,0 +1,55 @@
+package com.security.Auth.Entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Dairycustomer {
+	
+	@Column(nullable=false)
+	private String name;
+	
+	@Id
+	private String contact;
+	
+	
+	private String mail;
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public String getContact() {
+		return contact;
+	}
+
+
+	public void setContact(String contact) {
+		this.contact = contact;
+	}
+
+
+	public String getMail() {
+		return mail;
+	}
+
+
+	public void setMail(String mail) {
+		this.mail = mail;
+	}
+	
+	
+	
+	
+	
+	
+
+}

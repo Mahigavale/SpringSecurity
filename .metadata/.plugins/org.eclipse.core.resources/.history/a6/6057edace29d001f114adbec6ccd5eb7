@@ -1,0 +1,8 @@
+package com.products.Repository;
+
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+public class BottleRepositoryIntegrationtest {
+
+}

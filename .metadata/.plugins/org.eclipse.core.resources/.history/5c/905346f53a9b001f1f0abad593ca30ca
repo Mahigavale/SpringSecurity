@@ -1,0 +1,12 @@
+package com.security.Auth.Service;
+
+public class Dairycustomerservicetest {
+	
+	
+	
+	public void testemail()
+	{
+		
+	}
+
+}
