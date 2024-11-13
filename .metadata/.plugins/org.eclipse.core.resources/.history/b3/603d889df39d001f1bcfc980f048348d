@@ -1,0 +1,40 @@
+package com.Mailservice;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Mailservicecontroller {
+	
+	
+	@Autowired
+  private Mailsenderservice service;
+	
+	
+    @GetMapping("/sendHtmlEmail")
+    public String sendHtmlEmail(
+            @RequestParam("to") String to,
+            @RequestParam("subject") String subject) {
+        
+        // HTML content as a string
+        String htmlBody = "<html>"
+                        + "<body>"
+                        + "<h1>Hello,</h1>"
+                        + "<p>This is a <strong>dynamic HTML email</strong>.</p>"
+                        + "<p>Here's a sample table:</p>"
+                        + "<table border='1'>"
+                        + "<tr><th>Product</th><th>Price</th></tr>"
+                        + "<tr><td>Product A</td><td>$10</td></tr>"
+                        + "<tr><td>Product B</td><td>$20</td></tr>"
+                        + "</table>"
+                        + "</body>"
+                        + "</html>";
+
+        emailService.sendEmail(to, subject, htmlBody);
+        return "HTML Email sent successfully!";
+    }
+}
+
+}
