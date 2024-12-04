@@ -1,0 +1,7 @@
+package com.hotel.Security;
+
+
+@Enablewebsecurity
+public class Securityconfig {
+
+}

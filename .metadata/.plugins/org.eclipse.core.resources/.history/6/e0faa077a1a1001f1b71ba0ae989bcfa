@@ -1,0 +1,40 @@
+package com.hotel.Service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.hotel.Exceptions.Hotelalreadyexists;
+import com.hotel.entity.Hotelentity;
+import com.hotel.repository.Hotelrepo;
+
+@Service
+@RequestMapping("/Hotel")
+public class Hotelservice {
+	
+	
+	@Autowired
+	private Hotelrepo repo;
+	
+	
+	public Hotelentity addhotel(Hotelentity entity) throws Hotelalreadyexists
+	{
+		List<Hotelentity>  all_hotels=repo.findAll();
+		
+		for(Hotelentity e:all_hotels)
+		{
+			if(e.getHotelid()==entity.getHotelid())
+			{
+				throw new Hotelalreadyexists();
+			}
+			
+			else
+			{
+				return repo.save(entity);
+			}
+		}
+	}
+
+}

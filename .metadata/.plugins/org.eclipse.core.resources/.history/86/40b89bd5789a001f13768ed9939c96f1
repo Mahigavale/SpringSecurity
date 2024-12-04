@@ -1,6 +1,0 @@
-package com.school.Entity;
-
-@Entity
-public class Principal {
-
-}

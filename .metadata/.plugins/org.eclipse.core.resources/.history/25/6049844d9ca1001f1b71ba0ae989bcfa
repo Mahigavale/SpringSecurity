@@ -1,0 +1,54 @@
+package com.hotel.entitytest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+
+import com.hotel.entity.Hoteladdress;
+import com.hotel.entity.Hotelentity;
+import com.hotel.repository.Hotelrepo;
+
+@DataJpaTest
+public class Hotelrepositorytest {
+	
+	
+	@Autowired
+	Hotelrepo repo;
+	
+	
+	
+	private void hotel_save_not_null_Test()
+	{
+		var address=new Hoteladdress("Pune","411057","Deccan");
+		
+		var hotel=new Hotelentity("Urban","M.Singh",address);
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//@DataJpaTest=> it is used to check the tests associated with the DB operations like save etc. It will Only start the specific part 
+//of the spring application.rather starting the whole spring application context. used in Unit Testing.
+//unit => seperated folders for the test.

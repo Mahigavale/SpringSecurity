@@ -1,0 +1,3 @@
+spring.application.name=Oberoi
+# In application.properties
+spring.profiles.active=dev  # Or set to "prod" to activate the production profile

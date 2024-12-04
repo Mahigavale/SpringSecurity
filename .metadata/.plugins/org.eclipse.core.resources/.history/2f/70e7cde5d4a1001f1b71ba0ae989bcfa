@@ -1,0 +1,21 @@
+package com.hotel.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.hotel.entity.Room;
+import com.hotel.repository.Roomrepo;
+
+@Service
+public class Roomservice {
+	
+	@Autowired
+	private Roomrepo repo;
+	
+	
+	public Room bookroom(Room room)
+	{
+		
+	}
+
+}

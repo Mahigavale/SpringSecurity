@@ -1,0 +1,24 @@
+package com.hotel.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.hotel.Service.Userentityservice;
+
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
+
+@RestController
+public class Usercontroller {
+	
+	@Autowired
+	public Userentityservice service;
+	
+	
+	@PostMapping("/add-user")
+	public String addusercontroller(@RequestBody)
+	{
+		
+	}
+
+}

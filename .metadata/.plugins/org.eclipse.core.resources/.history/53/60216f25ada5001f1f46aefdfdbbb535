@@ -1,0 +1,32 @@
+package com.hotel.RepoTest;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+
+import com.hotel.Service.Hotelservice;
+import com.hotel.Service.RoombookingService;
+import com.hotel.repository.Roomrepo;
+
+@DataJpaTest
+public class Roomrepotest {
+	
+	
+	@Autowired
+	public Hotelservice service2;
+	
+	@Autowired
+	public RoombookingService service;
+	
+	@InjectMocks
+	private Roomrepo repo;
+	
+	
+	@Test
+	public void find_room_bookings_by_id()
+	{
+		
+	}
+
+}

@@ -1,0 +1,32 @@
+package com.hotel.Servicetests;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.hotel.Service.Roomservice;
+import com.hotel.entity.Hoteladdress;
+import com.hotel.entity.Hotelentity;
+import com.hotel.repository.Roomrepo;
+
+@SpringBootTest
+public class Roomservicetest {
+	
+	@Autowired
+	public Roomrepo repo;
+	
+	@Autowired
+	public Roomservice service;
+	
+	
+	@Test
+	public void add_room_test()
+	{
+        var address=new Hoteladdress("Pune","411057","Deccan");
+		
+		var hotel=new Hotelentity("Urban","M.Singh",address);
+		
+		var room=new Room();
+	}
+
+}

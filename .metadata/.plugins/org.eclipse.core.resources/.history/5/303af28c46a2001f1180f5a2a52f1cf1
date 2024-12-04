@@ -1,0 +1,14 @@
+package com.hotel.Servicetests;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.hotel.repository.Roomrepo;
+
+@SpringBootTest
+public class Roomservicetest {
+	
+	@Autowired
+	public Roomrepo repo;
+
+}

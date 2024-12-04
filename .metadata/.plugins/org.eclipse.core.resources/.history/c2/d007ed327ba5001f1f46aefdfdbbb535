@@ -1,0 +1,34 @@
+package com.hotel.Service;
+
+import java.time.LocalDate;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.hotel.Customlogic.Checkavailability;
+import com.hotel.entity.Room;
+import com.hotel.entity.Roombooking;
+import com.hotel.repository.Roombookingrepo;
+
+@Service
+public class RoombookingService {
+	
+	
+	@Autowired
+	public Roombookingrepo repo;
+	
+	@Autowired
+	public Room room;
+	
+	@Autowired
+	public Checkavailability availability;
+	
+	public Roombooking bookroom( Roombooking booking)
+	{
+		
+		List<Localdate> bookedtilldates=
+		
+		//return repo.save(booking);
+	}
+
+}

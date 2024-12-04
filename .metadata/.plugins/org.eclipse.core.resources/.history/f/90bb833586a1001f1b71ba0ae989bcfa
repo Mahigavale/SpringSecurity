@@ -1,0 +1,20 @@
+package com.hotel.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+
+@Entity
+public class Hoteladdress {
+	
+	
+	public int addid;
+	public String city;
+	public String pincode;
+	public String locality;
+	
+	@JoinColumn
+	
+	
+	
+
+}

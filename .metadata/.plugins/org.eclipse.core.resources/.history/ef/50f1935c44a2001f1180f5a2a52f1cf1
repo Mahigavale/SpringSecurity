@@ -1,0 +1,11 @@
+package com.hotel.Exceptions;
+
+public class SomethingwentwrongException extends Exception {
+	
+	
+	public SomethingwentwrongException()
+	{
+		
+	}
+
+}

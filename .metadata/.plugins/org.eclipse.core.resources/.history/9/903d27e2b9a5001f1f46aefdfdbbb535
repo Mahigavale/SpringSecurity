@@ -1,0 +1,7 @@
+package com.hotel.Controller;
+
+
+@RequestMapping("/Room")
+public class Roomcontroller {
+
+}

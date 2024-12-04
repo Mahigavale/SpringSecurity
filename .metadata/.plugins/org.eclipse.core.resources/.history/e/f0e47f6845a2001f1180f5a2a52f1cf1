@@ -1,0 +1,43 @@
+package com.hotel.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.hotel.Exceptions.HotelnotexistsException;
+import com.hotel.Exceptions.SomethingwentwrongException;
+import com.hotel.entity.Room;
+import com.hotel.repository.Roomrepo;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@Slf4j
+public class Roomservice {
+	
+	@Autowired
+	private Roomrepo repo;
+	
+	
+	public Room addroom(Room room) throws HotelnotexistsException
+	{
+
+		if(room.getEntity().getHotelid() <=0)
+		{
+			log.error("Exception in adding room !");
+			throw new HotelnotexistsException();
+		}
+		
+		return repo.save(room);
+	}
+	
+	
+	public Room getroom(int id)
+	{
+		if(id<=0)
+		{
+			throw new SomethingwentwrongException();
+		}
+	}
+	
+	
+}

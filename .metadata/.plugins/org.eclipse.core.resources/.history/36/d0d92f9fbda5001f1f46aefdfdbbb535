@@ -1,0 +1,17 @@
+package com.hotel.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.hotel.repository.Customerrepository;
+
+@Service
+public class Customerservice {
+	
+	
+	@Autowired
+	public Customerrepository repo;
+	
+	public Customer login()
+
+}

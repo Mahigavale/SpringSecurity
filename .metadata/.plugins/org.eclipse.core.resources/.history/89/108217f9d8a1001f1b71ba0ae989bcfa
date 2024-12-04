@@ -1,0 +1,17 @@
+package com.hotel.entity;
+
+import java.sql.Date;
+import java.time.LocalDate;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Roombooking {
+	
+	@Id
+	private int bookingid;
+	private LocalDate bookedon;
+	private LocalDate bookedtill;
+
+}

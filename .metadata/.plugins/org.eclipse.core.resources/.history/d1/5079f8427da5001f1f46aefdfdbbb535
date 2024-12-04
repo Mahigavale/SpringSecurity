@@ -1,0 +1,43 @@
+package com.hotel.Servicetests;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.hotel.Exceptions.Hotelalreadyexists;
+import com.hotel.Service.Hotelservice;
+import com.hotel.entity.Hoteladdress;
+import com.hotel.entity.Hotelentity;
+import com.hotel.entity.Room;
+import com.hotel.repository.Roombookingrepo;
+import com.hotel.repository.Roomrepo;
+
+@SpringBootTest
+public class Roombookingservicetest {
+
+	
+	@Autowired
+	public Roombookingrepo repo;
+	
+	@Autowired
+	public Roomrepo repo2;
+	
+	@Autowired
+	public Room room;
+	
+	@Autowired
+	public Hotelservice service2;
+	
+	
+	public void room_booking_service_test_not_null() throws Hotelalreadyexists
+	{
+		 var address=new Hoteladdress("Pune","411057","Deccan");
+			
+			var hotel=new Hotelentity("Urban","M.Singh",address);
+			
+			
+			var room=new Room("Delux",true,true,true,"King","52 inches",true,hotel);
+			
+			//act
+			service2.addhotel(hotel);
+	}
+}

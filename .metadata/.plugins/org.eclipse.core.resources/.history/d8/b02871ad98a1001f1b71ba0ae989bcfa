@@ -1,0 +1,9 @@
+package com.hotel.Controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RequestMapping("/Hotel")
+@RestController
+public class Hotelcontroller {
+
+}

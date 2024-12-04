@@ -1,0 +1,24 @@
+package com.hotel.entity;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
+
+@Entity
+public class Hoteladdress {
+	
+	
+	public int addid;
+	public String city;
+	public String pincode;
+	public String locality;
+	
+	@JoinColumn
+	@OneToOne(Cascade=CascadeType.ALL)
+	public Hoteladdress address;
+	
+	
+	
+
+}

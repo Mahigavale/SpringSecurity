@@ -1,0 +1,20 @@
+package com.hotel.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.hotel.entity.Roombooking;
+
+@Service
+public class RoombookingService {
+	
+	
+	@Autowired
+	public 
+	
+	public Roombooking bookroom()
+	{
+		
+	}
+
+}

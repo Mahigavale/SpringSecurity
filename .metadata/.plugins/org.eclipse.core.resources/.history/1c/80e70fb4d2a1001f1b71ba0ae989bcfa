@@ -1,0 +1,16 @@
+package com.hotel.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Room {
+	@Id
+	private int roomid;
+	private String roomtype;
+	private boolean issmokingfriendly;
+	private boolean iscooled;
+	private boolean hasgallery;
+	private String bedsize;
+
+}

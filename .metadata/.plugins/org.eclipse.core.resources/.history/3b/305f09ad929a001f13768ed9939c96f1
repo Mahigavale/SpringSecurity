@@ -1,9 +1,0 @@
-package com.school.Controller;
-
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
-@RequestMapping("/Student")
-public class Studentcontroller {
-
-}

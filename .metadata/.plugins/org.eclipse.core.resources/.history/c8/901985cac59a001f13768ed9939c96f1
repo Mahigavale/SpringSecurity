@@ -1,7 +1,0 @@
-package com.school.Security;
-
-import org.springframework.security.core.userdetails.UserDetailsService;
-
-public class Myuserdetailsservice implements UserDetailsService {
-
-}

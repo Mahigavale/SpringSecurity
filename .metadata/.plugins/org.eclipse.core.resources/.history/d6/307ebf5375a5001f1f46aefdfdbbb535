@@ -1,0 +1,16 @@
+package com.hotel.Service;
+
+import org.springframework.stereotype.Service;
+
+import com.hotel.entity.Roombooking;
+
+@Service
+public class RoombookingService {
+	
+	
+	public Roombooking bookroom()
+	{
+		
+	}
+
+}

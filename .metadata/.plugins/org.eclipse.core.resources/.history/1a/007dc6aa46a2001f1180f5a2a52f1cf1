@@ -1,0 +1,23 @@
+package com.hotel.Servicetests;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.hotel.Service.Roomservice;
+import com.hotel.repository.Roomrepo;
+
+@SpringBootTest
+public class Roomservicetest {
+	
+	@Autowired
+	public Roomrepo repo;
+	
+	@Autowired
+	public Roomservice service;
+	
+	
+	@Test
+	public void 
+
+}

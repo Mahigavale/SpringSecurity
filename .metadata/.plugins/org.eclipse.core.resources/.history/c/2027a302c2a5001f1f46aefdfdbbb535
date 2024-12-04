@@ -1,0 +1,8 @@
+package com.hotel.Controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestControlle
+public class Usercontroller {
+
+}

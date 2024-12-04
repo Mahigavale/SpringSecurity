@@ -1,0 +1,21 @@
+package com.hotel.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.validation.constraints.Email;
+
+@Entity
+public class Customer {
+	
+	
+	public int id;
+	public String name;
+	public String mobile;
+	public String  password;
+	
+	@Email
+	public String email;
+	
+	
+	@ManyToOne
+
+}

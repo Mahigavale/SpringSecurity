@@ -1,0 +1,13 @@
+package com.hotel.Customlogic;
+
+import java.time.LocalDate;
+
+public class Checkavailability {
+
+	
+	
+	public boolean checkroom(LocalDate newbooking,LocalDate oldbooking)
+	{
+		
+	}
+}

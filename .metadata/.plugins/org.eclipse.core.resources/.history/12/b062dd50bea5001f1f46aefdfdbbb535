@@ -1,0 +1,12 @@
+package com.hotel.Service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class Userentityservice {
+	
+	
+	
+	BcryptpasswordEncoder encode=new Bcryptpasswordencoder(10);
+
+}

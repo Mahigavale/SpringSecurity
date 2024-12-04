@@ -1,0 +1,22 @@
+package com.hotel.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Room {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int roomid;
+	private String roomtype;
+	private boolean issmokingfriendly;
+	private boolean iscooled;
+	private boolean hasgallery;
+	private String bedsize;
+	private String tvsize;
+	private boolean hasbathtub;
+	
+
+}

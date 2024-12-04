@@ -1,7 +1,0 @@
-package com.school.Repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface Parentrepo extends JpaRepository<Parent,Integer> {
-
-}

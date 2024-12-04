@@ -1,0 +1,10 @@
+package com.hotel.Security;
+
+import org.springframework.context.annotation.Configuration;
+
+
+@Enablewebsecurity
+@Configuration
+public class Securityconfig {
+
+}

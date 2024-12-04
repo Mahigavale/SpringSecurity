@@ -1,0 +1,10 @@
+package com.hotel.Exceptions;
+
+public class Roomalreadybookedexception extends Exception {
+	
+	public Roomalreadybookedexception()
+	{
+		
+	}
+
+}

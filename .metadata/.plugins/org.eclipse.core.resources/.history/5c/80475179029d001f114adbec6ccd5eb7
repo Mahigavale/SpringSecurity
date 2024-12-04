@@ -1,5 +1,0 @@
-package com.products.Repository;
-
-public interface Bottlerepo {
-
-}

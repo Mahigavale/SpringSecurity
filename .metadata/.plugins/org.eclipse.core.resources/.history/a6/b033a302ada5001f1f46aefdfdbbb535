@@ -1,0 +1,21 @@
+package com.hotel.RepoTest;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+
+import com.hotel.repository.Roomrepo;
+
+@DataJpaTest
+public class Roomrepotest {
+	
+	
+	
+	@InjectMocks
+	private Roomrepo repo;
+	
+	
+	@Test
+	public void 
+
+}

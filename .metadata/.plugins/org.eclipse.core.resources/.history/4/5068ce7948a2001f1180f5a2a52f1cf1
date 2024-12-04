@@ -1,0 +1,57 @@
+package com.hotel.Servicetests;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.hotel.Service.Roomservice;
+import com.hotel.entity.Hoteladdress;
+import com.hotel.entity.Hotelentity;
+import com.hotel.entity.Room;
+import com.hotel.repository.Roomrepo;
+
+import jakarta.transaction.Transactional;
+
+@SpringBootTest
+@Transactional
+public class Roomservicetest {
+	
+	@Autowired
+	public Roomrepo repo;
+	
+	@Autowired
+	public Roomservice service;
+	
+	
+	@Test
+	public void add_room_test()
+	{
+		/*
+		public Room(String roomtype,boolean issmokingfriendly,boolean iscooled,boolean hasgallery,String bedsize,String tvsize,boolean hasbathtub,Hotelentity entity)
+		{
+			this.bedsize=bedsize;
+			this.entity=entity;
+			this.hasbathtub=hasbathtub;
+			this.hasgallery=hasgallery;
+			this.iscooled=iscooled;
+			this.roomtype=roomtype;
+			this.issmokingfriendly=issmokingfriendly;
+			this.tvsize=tvsize;
+		}
+		*/
+		//arraneg
+		
+        var address=new Hoteladdress("Pune","411057","Deccan");
+		
+		var hotel=new Hotelentity("Urban","M.Singh",address);
+		var room=new Room("Delux",true,true,true,"King","52 inches",true,hotel);
+		
+		//act
+		
+		
+		
+	}
+
+}
+
+//Transactional is used to roll back the things we did in the in the test purpose.

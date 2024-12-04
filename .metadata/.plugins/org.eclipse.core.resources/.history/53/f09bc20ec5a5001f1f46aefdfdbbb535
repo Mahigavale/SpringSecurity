@@ -1,0 +1,39 @@
+package com.hotel.Security;
+
+import java.util.Collection;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import com.hotel.entity.Userentity;
+
+public class Userprincipal implements UserDetails {
+	
+	
+	@Autowired
+	public Userentity entity;
+	
+	public Userprincipal(Userentity entity)
+	{
+		this.entity=entity;
+	}
+	
+
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		
+	}
+
+	@Override
+	public String getPassword() {
+		
+	}
+
+	@Override
+	public String getUsername() {
+		
+		return entity.getUsername();
+	}
+
+}

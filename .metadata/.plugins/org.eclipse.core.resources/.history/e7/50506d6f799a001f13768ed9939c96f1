@@ -1,8 +1,0 @@
-package com.school.Entity;
-
-import jakarta.persistence.Entity;
-
-@Entity
-public class School {
-
-}

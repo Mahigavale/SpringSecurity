@@ -1,0 +1,11 @@
+package com.hotel.RepoTest;
+
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+
+@DataJpaTest
+public class Roomrepotest {
+	
+	
+	
+
+}

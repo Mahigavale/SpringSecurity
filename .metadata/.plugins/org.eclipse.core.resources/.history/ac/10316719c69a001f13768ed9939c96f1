@@ -1,9 +1,0 @@
-package com.school.Repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.school.Entity.Principal;
-
-public interface Principalrepo extends JpaRepository<Principal, Integer> {
-
-}

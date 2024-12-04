@@ -1,0 +1,23 @@
+package com.hotel.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+
+import com.hotel.entity.Room;
+
+import jakarta.transaction.Transactional;
+
+public interface Roomrepo extends JpaRepository<Room,Integer> {
+	
+	
+//	@Query(value)
+//	@Modifying
+//	@Transactional
+//	public int uodateroom();
+	
+	
+	
+	@Query(value="select * from room where id= :id" , nativeQuery=true)
+
+}
